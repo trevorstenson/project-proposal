@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Markers Test</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="./map.js"></script>
+  </head>
+  <body>
+    <div id="heading">
+      <h1>Type in a Position and hit the button to add a marker to the map.</h1>
+      <div>
+        <label>Lat: </label><input type="text" id="lat" value="42.361145"/>
+        <label>Lng: </label><input type="text" id="lng" value="-71.057083"/>
+        <button id="positionButton">Mark Position</button>
+      </div>
+    </div>
+    
+    
+    <div id="map"></div>
+  </body>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZEU9BhosOdMNLtPaMYeq8T_Tip31FLh0&callback=initMapWithMarkers"
+  type="text/javascript"></script>
+</html>
