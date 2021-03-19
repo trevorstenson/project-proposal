@@ -1,0 +1,15 @@
+<div class="row-cols-xl-1">
+    <h4>Airports (Within 100 km):</h4>
+    <%= for airport <- @airports do %>
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title"><%= airport.name %></h5>
+                <p class="card-text"><%= airport.iata %></p>
+                <p class="card-text"><%= airport.distance %></p>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <% end %>
+</div>
